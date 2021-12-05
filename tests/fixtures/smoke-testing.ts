@@ -1,12 +1,12 @@
 #!/usr/bin/env -S node --no-warnings --loader ts-node/esm
 
 import {
-  PuppetMock,
+  PuppetDiscord,
   VERSION,
 }                 from 'wechaty-puppet-mock'
 
 async function main () {
-  const puppet = new PuppetMock()
+  const puppet = new PuppetDiscord()
 
   if (VERSION === '0.0.0') {
     throw new Error('version should not be 0.0.0 when prepare for publishing')

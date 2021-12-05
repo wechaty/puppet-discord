@@ -14,13 +14,13 @@ import type {
 }                 from '../src/mock/mod.js'
 
 import {
-  PuppetMock,
+  PuppetDiscord,
   mock,
 }                         from '../src/mod.js'
 
 async function * wechatyFixture () {
   const mocker  = new mock.Mocker()
-  const puppet  = new PuppetMock({ mocker })
+  const puppet  = new PuppetDiscord({ mocker })
   const wechaty = WechatyBuilder.build({ puppet })
 
   try {
@@ -38,7 +38,7 @@ async function * wechatyFixture () {
 
 test('integration testing', async t => {
   const mocker = new mock.Mocker()
-  const puppet = new PuppetMock({ mocker })
+  const puppet = new PuppetDiscord({ mocker })
   const wechaty = WechatyBuilder.build({ puppet })
 
   t.ok(wechaty, 'should instantiate wechaty with puppet mocker')

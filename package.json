@@ -1,7 +1,7 @@
 {
-  "name": "wechaty-puppet-mock",
+  "name": "wechaty-puppet-discord",
   "version": "1.11.3",
-  "description": "Puppet Mocker for Wechaty",
+  "description": "Discord Puppet for Wechaty",
   "type": "module",
   "exports": {
     ".": {
@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wechaty/puppet-mock.git"
+    "url": "git+https://github.com/wechaty/puppet-discord.git"
   },
   "keywords": [
     "chatie",
@@ -40,14 +40,14 @@
     "wechat",
     "sdk",
     "puppet",
-    "mock"
+    "discord"
   ],
   "author": "Huan LI <zixia@zixia.net>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/wechaty/puppet-mock/issues"
+    "url": "https://github.com/wechaty/puppet-discord/issues"
   },
-  "homepage": "https://github.com/wechaty/puppet-mock#readme",
+  "homepage": "https://github.com/wechaty/puppet-discord#readme",
   "devDependencies": {
     "@chatie/eslint-config": "^1.0.4",
     "@chatie/git-scripts": "^0.6.2",
@@ -61,6 +61,7 @@
     "wechaty-puppet": "^1.11.12"
   },
   "dependencies": {
+    "discord.js": "^13.3.1",
     "cuid": "^2.1.8",
     "faker": "^5.5.3",
     "typed-emitter": "^1.5.0-from-event"

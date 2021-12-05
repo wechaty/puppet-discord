@@ -1,11 +1,8 @@
 import { VERSION }    from './config.js'
-import { PuppetMock } from './puppet-mock.js'
-
-import * as mock from './mock/mod.js'
+import { PuppetDiscord } from './puppet-discord.js'
 
 export {
   VERSION,
-  PuppetMock,
-  mock,
+  PuppetDiscord,
 }
-export default PuppetMock
+export default PuppetDiscord

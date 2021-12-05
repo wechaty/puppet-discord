@@ -2,13 +2,13 @@
 
 import { test } from 'tstest'
 
-import { PuppetMock } from './puppet-mock.js'
+import { PuppetDiscord } from './puppet-discord.js'
 
-class PuppetMockTest extends PuppetMock {
+class PuppetDiscordTest extends PuppetDiscord {
 }
 
-test('PuppetMock perfect restart testing', async t => {
-  const puppet = new PuppetMockTest()
+test('PuppetDiscord perfect restart testing', async t => {
+  const puppet = new PuppetDiscordTest()
   try {
 
     for (let i = 0; i < 3; i++) {
@@ -21,15 +21,15 @@ test('PuppetMock perfect restart testing', async t => {
       t.pass('start/stop-ed at #' + i)
     }
 
-    t.pass('PuppetMock() perfect restart pass.')
+    t.pass('PuppetDiscord() perfect restart pass.')
   } catch (e) {
     t.fail(e as any)
   }
 })
 
-test('PuppetMock toString()', async t => {
-  const puppet = new PuppetMockTest()
-  const REGEXP = /PuppetMock/
+test('PuppetDiscord toString()', async t => {
+  const puppet = new PuppetDiscordTest()
+  const REGEXP = /PuppetDiscord/
   t.doesNotThrow(() => puppet.toString(), 'should not throw')
-  t.ok(REGEXP.test(puppet.toString()), 'should be PuppetMock')
+  t.ok(REGEXP.test(puppet.toString()), 'should be PuppetDiscord')
 })

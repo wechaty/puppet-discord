@@ -18,8 +18,7 @@
  */
 import type * as PUPPET from 'wechaty-puppet'
 import {
-  PuppetMock,
-  mock,
+  PuppetDiscord,
 }               from '../src/mod.js'
 
 const mocker = new mock.Mocker()
@@ -30,7 +29,7 @@ mocker.use(mock.SimpleEnvironment())
  * 1. Declare your Bot!
  *
  */
-const puppet = new PuppetMock({ mocker })
+const puppet = new PuppetDiscord({ mocker })
 
 /**
  *
