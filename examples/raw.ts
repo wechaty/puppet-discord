@@ -8,7 +8,10 @@ import Discord, {
 
 // initialize client
 const client = new Discord.Client({
-  intents: 534723950656,
+  intents: [
+    Intents.FLAGS.GUILDS,
+    Intents.FLAGS.GUILD_MESSAGES,
+  ],
 })
 
 // log out some info
