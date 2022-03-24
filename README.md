@@ -19,6 +19,12 @@ Puppet Mocker & Starter Template for Wechaty, it is very useful when you:
 
 Then `PuppetDiscord` will helps you a lot.
 
+## UNDER CONSTRUCTION
+
+This module is not useable, please do not try to use it unless you want to join the developer group.
+
+See: Issue [#1](https://github.com/wechaty/puppet-discord/issues/1)
+
 ## USAGE
 
 ### Puppet Discord
